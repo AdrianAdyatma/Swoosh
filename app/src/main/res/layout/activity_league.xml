@@ -37,13 +37,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_goSkill"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/tb_women"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_check"
@@ -57,7 +57,7 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton9"
+            android:id="@+id/tb_men"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -73,7 +73,7 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton10"
+            android:id="@+id/tb_coed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_check"
@@ -89,7 +89,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_goSkill"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -98,7 +98,6 @@
         android:background="@drawable/btn_bg_main"
         android:fontFamily="@font/montserrat"
         android:foreground="?attr/selectableItemBackground"
-        android:onClick="goToSkillActivity"
         android:text="NEXT"
         android:textColor="@android:color/white"
         android:textSize="16sp"
