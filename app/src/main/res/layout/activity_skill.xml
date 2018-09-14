@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".SkillActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/beginnerballerbg" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -30,13 +30,14 @@
         app:srcCompat="@drawable/swooshlogo" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,45 +45,33 @@
 
         <ToggleButton
             android:id="@+id/toggleButton8"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_check"
             android:fontFamily="@font/montserrat"
             android:foreground="?attr/selectableItemBackground"
-            android:text="WOMEN"
+            android:text="BEGINNER"
             android:textColor="@android:color/white"
-            android:textOff="WOMEN"
-            android:textOn="WOMEN"
+            android:textOff="BEGINNER"
+            android:textOn="BEGINNER"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <ToggleButton
             android:id="@+id/toggleButton9"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_check"
             android:fontFamily="@font/montserrat"
             android:foreground="?attr/selectableItemBackground"
-            android:text="MEN"
+            android:text="BALLER"
             android:textColor="@android:color/white"
-            android:textOff="MEN"
-            android:textOn="MEN"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_check"
-            android:fontFamily="@font/montserrat"
-            android:foreground="?attr/selectableItemBackground"
-            android:text="CO-ED"
-            android:textColor="@android:color/white"
-            android:textOff="CO-ED"
-            android:textOn="CO-ED"
+            android:textOff="BALLER"
+            android:textOn="BALLER"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -98,12 +87,25 @@
         android:background="@drawable/btn_bg_main"
         android:fontFamily="@font/montserrat"
         android:foreground="?attr/selectableItemBackground"
-        android:onClick="goToSkillActivity"
-        android:text="NEXT"
+        android:text="FINISH"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="SKILL LEVEL"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
 </android.support.constraint.ConstraintLayout>

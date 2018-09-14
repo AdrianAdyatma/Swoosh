@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LeagueActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".SkillActivity"></activity>
     </application>
 
 </manifest>
