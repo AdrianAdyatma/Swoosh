@@ -1,10 +1,11 @@
-package com.adrianadyatma.swoosh
+package com.adrianadyatma.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.adrianadyatma.swoosh.Utilities.EXTRA_LEAGUE
+import com.adrianadyatma.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity(), View.OnClickListener {
@@ -52,7 +53,7 @@ class LeagueActivity : BaseActivity(), View.OnClickListener {
             R.id.btn_goSkill -> {
                 if ((tb_women.isChecked || tb_men.isChecked || tb_coed.isChecked) && this::selectedLeague.isInitialized){
                     val i = Intent(this, SkillActivity::class.java)
-                    i.putExtra(EXTRA_LEAGUE,selectedLeague)
+                    i.putExtra(EXTRA_LEAGUE, selectedLeague)
                     startActivity(i)
                 } else {
                     Toast.makeText(this, "Please select a league", Toast.LENGTH_SHORT).show()

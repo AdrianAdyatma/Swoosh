@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".Controller.WelcomeActivity">
 
 
     <ImageView
@@ -66,7 +66,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:singleLine="false"
         android:text="Find a team in your city, and dominate the league"
         android:textAlignment="center"
         android:textColor="@android:color/white"
