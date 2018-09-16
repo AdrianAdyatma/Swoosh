@@ -29,7 +29,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/swooshlogo" />
 
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="DESIRED LEAGUE"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ln"
+        app:layout_constraintEnd_toEndOf="@id/ln"
+        app:layout_constraintStart_toStartOf="@id/ln"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
     <LinearLayout
+        android:id="@+id/ln"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -37,10 +55,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btn_goSkill"
+        app:layout_constraintBottom_toTopOf="@id/btn_goSkill"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
             android:id="@+id/tb_women"
@@ -105,4 +123,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
